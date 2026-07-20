@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "900198240081",
+    "project_id": "foodkonnect-10964",
+    "storage_bucket": "foodkonnect-10964.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900198240081:android:d1a981c0b8277f1a23cd70",
+        "android_client_info": {
+          "package_name": "com.khalil.foodkonnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSd6dzOGReTgqgqmbxs09VAxKWquIMpI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
