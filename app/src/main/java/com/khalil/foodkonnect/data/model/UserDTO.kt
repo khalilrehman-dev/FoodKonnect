@@ -1,6 +1,6 @@
 package com.khalil.foodkonnect.data.model
 
-import java.security.Timestamp
+import com.google.firebase.Timestamp
 
 data class UserDto(
     val uid: String = "",
