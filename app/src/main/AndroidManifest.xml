@@ -39,6 +39,11 @@
             android:exported="false"
             android:theme="@style/Theme.FoodKonnect" />
 
+        <activity
+            android:name=".ui.signup.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FoodKonnect" />
+
     </application>
 
 </manifest>

@@ -47,9 +47,9 @@ class RoleSelectionActivity : AppCompatActivity() {
     }
 
     private fun goToSignUp() {
-        // TODO: pass selectedRole to SignUpActivity once it exists, so the form
-        // knows whether to show business-only fields.
         val role = selectedRole ?: return
-        // Intent + extra will be wired once SignUpActivity is created.
+        val intent = Intent(this, com.khalil.foodkonnect.ui.signup.SignUpActivity::class.java)
+        // TODO: pass role as an intent extra once SignUpActivity reads it to preset the toggle
+        startActivity(intent)
     }
 }

@@ -13,4 +13,16 @@
     <string name="role_business_description">List your menu and grow</string>
     <string name="continue_text">Continue</string>
     <string name="location_pin_description">Selected location pin</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="create_account_subtitle">Join FoodKonnect and get started</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="business_name">Business / Kitchen Name</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="home_chef">Home Chef</string>
+    <string name="avg_prep_time">Average Prep Time (minutes)</string>
+    <string name="set_business_location">Set your kitchen location</string>
 </resources>
