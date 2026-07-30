@@ -1,0 +1,32 @@
+package com.khalil.foodkonnect.ui.onboarding
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.khalil.foodkonnect.databinding.ItemOnboardingPageBinding
+
+// ViewPager2 uses a RecyclerView.Adapter under the hood, so this looks like
+// a normal RecyclerView adapter — ViewPager2 just renders one item per screen.
+class OnboardingPagerAdapter(
+    private val pages: List<OnboardingPage>
+) : RecyclerView.Adapter<OnboardingPagerAdapter.PageViewHolder>() {
+
+    inner class PageViewHolder(val binding: ItemOnboardingPageBinding) :
+        RecyclerView.ViewHolder(binding.root)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PageViewHolder {
+        val binding = ItemOnboardingPageBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
+        )
+        return PageViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: PageViewHolder, position: Int) {
+        val page = pages[position]
+        holder.binding.ivPageImage.setImageResource(page.imageRes)
+        holder.binding.tvPageTitle.text = page.title
+        holder.binding.tvPageDescription.text = page.description
+    }
+
+    override fun getItemCount(): Int = pages.size
+}
